@@ -1,87 +1,85 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+ body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #74ebd5, #acb6e5);
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+    }
 
-}
+    h1 {
+      margin-top: 20px;
+      font-size: 2rem;
+      color: #333;
+      text-align: center;
+    }
 
-header{
-    display: grid;
-    font-size: large;
-    font-weight: bold;
-    grid-template-columns: 1fr 1fr;
-    background-color: aliceblue;
-}
-#logo{
-    padding: 25px;
-}
-nav{
-    display: flex;
-    justify-content: space-around;
-}
-nav button{
-    font-family: fantasy;
-    font-size: x-large;
-    font:bolder;
-    border: none;
-    background:transparent;
-}
-#head{
-    text-align: center;
-    color:white;
-    padding: 15vh;
-    font-family: cursive;
-}
-#content{
-    height: 100vh;
-}
-#slogan1{
-    margin-left:20%;
-    margin-top:100px;
-    padding: 0 10px;
-    background-color: aqua;
-    width: fit-content;
-    height: fit-content;
-    text-align:center;
-    border: solid black 1px;
-    border-radius: 10px;
-}
-#slogan2{
-    margin-left:10%;
-    margin-top:100px;
-    padding: 0 10px;
-    background-color:aquamarine;
-    width: fit-content;
-    height: fit-content;
-    text-align: center;
-    border: solid black 1px;
-    border-radius: 10px;
-}
-#menulist{
-    display: flex;
-    justify-content: center;
-    gap:250px;
-    color:blue;
-}
-#menulist h3{
-    font-size: xx-large;
-    color: rgb(199 195 21);
-    margin-bottom: 20px;
-}
-.item ul li{
-    color:rgb(236, 13, 13);
-    padding: 10px;
-    font-size: x-large;
-    margin-left: 20px;
-    list-style-type: none;
-}
-#aboutus{
-    color:black ;
-    border: 2px solid black;
-    padding: 40px;
-    background-color: white  ;
-    
-    border-radius: 10px;
-    font-size: x-large;
-    max-width: 50%;
-}
+    /* Search Box Styling */
+    .search-container {
+      margin-top: 40px;
+      display: flex;
+      gap: 10px;
+    }
+
+    input {
+      padding: 10px 15px;
+      border: 2px solid #333;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 250px;
+      outline: none;
+      transition: 0.3s;
+    }
+
+    input:focus {
+      border-color: #0077ff;
+      box-shadow: 0 0 8px rgba(0, 119, 255, 0.5);
+    }
+
+    button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      background: #0077ff;
+      color: white;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #005fcc;
+    }
+
+    /* Weather Info Card */
+    .weather-card {
+      margin-top: 30px;
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+      width: 320px;
+      text-align: center;
+      animation: fadeIn 0.6s ease-in-out;
+    }
+
+    .weather-card h2 {
+      margin-bottom: 10px;
+      font-size: 1.5rem;
+      color: #222;
+    }
+
+    .weather-card p {
+      margin: 6px 0;
+      font-size: 1rem;
+      color: #555;
+    }
+
+    /* Animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
