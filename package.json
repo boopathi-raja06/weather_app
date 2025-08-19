@@ -1,10 +1,20 @@
 {
+  "name": "weather-app",
+  "version": "1.0.0",
+  "description": "Weather app using Webpack",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "webpack serve --open --mode development",
+    "build": "webpack --mode production",
+    "deploy": "gh-pages -d dist"
+  },
   "devDependencies": {
     "css-loader": "^7.1.2",
     "html-webpack-plugin": "^5.6.3",
     "style-loader": "^4.0.0",
     "webpack": "^5.99.5",
     "webpack-cli": "^6.0.1",
-    "webpack-dev-server": "^5.2.1"
+    "webpack-dev-server": "^5.2.1",
+    "gh-pages": "^6.2.0"
   }
 }
