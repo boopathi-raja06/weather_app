@@ -1,5 +1,5 @@
 export async function getWeatherData(city) {
-  const api = `https:weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=us&key=6XZ6WDG22SSXTVB4LTMZTKEFH&contentType=json`;
+  const api = `https://weather.visualcrossing.com/VisualCrossingWebServices/rest/services/timeline/${city}?unitGroup=us&key=6XZ6WDG22SSXTVB4LTMZTKEFH&contentType=json`;
     try {
         const response = await fetch(api,{mode: 'cors'});
         if (!response.ok) {
